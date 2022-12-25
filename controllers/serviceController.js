@@ -10,7 +10,7 @@ const serviceController = {
                 price: req.body.price,
                 image: req.body.image,
             }
-
+            const response = await ServiceModel.create(service);
         } catch (error) {
             console.log(error);
         }
