@@ -3,8 +3,7 @@ const router = require("express").Router();
 
 
 //services
-
-const serviceRouter = ("./service");
+const serviceRouter = require ("./service");
 
 
 router.use("/",serviceRouter);

@@ -11,6 +11,8 @@ const serviceController = {
                 image: req.body.image,
             }
             const response = await ServiceModel.create(service);
+
+            res.status(201).json({response, msg: "Serviço criado com sucesso!"});
         } catch (error) {
             console.log(error);
         }
